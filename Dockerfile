@@ -1,4 +1,4 @@
-FROM anoopnair/hadoop_base_alpine
+FROM alpine
 MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
 LABEL description="Build Jboss BRMS 6.1.5 standalone image on Alpine Linux"
@@ -7,10 +7,10 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.7-openjdk
 ENV PATH $JAVA_HOME/bin:$PATH
 ENV BRMS_HOME /opt/jboss-eap-6.4.5-brms-6.1.5
 
-#RUN apk --update add bash wget sudo openjdk7 && \
-#  rm -rf /var/cache/apk/* && \
-#  rm -rf /opt  && \
-#  mkdir -p /opt 
+RUN apk --update add bash wget sudo openjdk7 && \
+  rm -rf /var/cache/apk/* && \
+  rm -rf /opt  && \
+  mkdir -p /opt 
 
 # Copy and untar brms install directory
 COPY jboss-eap-6.4.5-brms-6.1.5.tar.gz /opt

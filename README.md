@@ -4,7 +4,7 @@ Build a Jboss BRMS docker image on Alpine Linux distro.
 ## Version
 - BRMS: 6.1.5
 
->Dockerhub: https://hub.docker.com/r/anoopnair/jboss-brms-alpine/
+>Dockerhub: https://hub.docker.com/r/anoopnair/jboss-brms/
 
 ## Start standalone BRMS container
 - ``docker run -it -p 38080:8080 -p 9990:9990 anoopnair/jboss-brms:6.1.5``
