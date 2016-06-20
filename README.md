@@ -2,14 +2,16 @@
 Build a Jboss BRMS docker image on Alpine Linux distro.
 
 ## Version
+- EAP: 6.4.5
 - BRMS: 6.1.5
 
 >Dockerhub: https://hub.docker.com/r/anoopnair/jboss-brms/
 
 ## Build docker image
-- Download _jboss-eap-6.4.5-brms-6.1.5.tar.gz_ from JBOSS site
+- Download _jboss-eap-6.4.5-brms-6.1.5.tar.gz_ or the latest one from JBOSS site
 - Put it in this folder
-- Build the docker image using ``docker build``
+- Update Docker file with EAP and brms version
+- Build the docker image using ``docker build`` command
 
 
 ## Start standalone BRMS container
